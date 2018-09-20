@@ -88,7 +88,7 @@ public class HelloSceneformActivity extends AppCompatActivity {
 
         // import the andy model
         ModelRenderable.builder()
-                .setSource(this, R.raw.andy)
+                .setSource(this, R.raw.pikachu)
                 .build()
                 .thenAccept(renderable -> andyRenderable = renderable);
 
@@ -115,6 +115,7 @@ public class HelloSceneformActivity extends AppCompatActivity {
                     Node andy = new Node();
                     andy.setParent(anchorNode);
                     andy.setRenderable(andyRenderable);
+                    andy.setWorldScale(new Vector3(0.15f, 0.15f, 0.15f));
 
                     // add the pokemon to the state
                     state.Pokemon = andy;

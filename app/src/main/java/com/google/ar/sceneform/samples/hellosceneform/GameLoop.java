@@ -27,7 +27,7 @@ public class GameLoop extends AsyncTask<Void, Void, Void> {
         bm = LocalBroadcastManager.getInstance(main);
 
         // set the gravity acting on the ball
-        state.BallAcceleration = new Vector3(0f, -0.0001f, 0f);
+        state.BallAcceleration = new Vector3(0f, -0.001f, 0f);
 
         // set the initial state of the game
         state.HoldingBall = 0;
